@@ -1,0 +1,97 @@
+/* regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Comic Neue';
+}
+
+/* nav bar */
+
+
+#nav-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* debug */
+    height: 100px;
+    width: 100%;
+    border: 1px solid black
+}
+
+.nav-col{
+    padding: 0 10px;
+}
+
+.nav-col ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-col a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* jumbotron */
+.bg-color{
+    background-color: rgb(191, 155, 224);
+}
+
+.jumbotron-row{
+    width: 80%;
+    margin: 0 auto;
+    /* debug */
+    border: 1px solid black;
+    height: 350px;
+    
+}
+
+.content-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.jumbotron-col{
+    /* debug */
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+  
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+}
+
+
+
+/* Main */
+.row{
+    width: 70%;
+    margin: 100px auto;
+    /* debug */
+    border: 1px solid black;
+    height: 500px;
+   
+}
+.content-col{
+
+}
+
+.option-col{
+    /* debug */
+    width: calc(100% / 3);
+    height: 300px;
+    border: 1px solid black;
+    
+}
