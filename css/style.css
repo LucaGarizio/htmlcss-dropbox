@@ -11,13 +11,14 @@ body{
 
 /* nav bar */
 #nav-row{
-    display: flex;
+    position: fixed;
+    z-index: 1;
+    display: flex;  
     justify-content: space-between;
     align-items: center;
     height: 80px;
     width: 100%;
-    /* debug */
-    border: 1px solid black
+    background-color: white;
 }
 
 .nav-col{
@@ -38,18 +39,15 @@ ul{
     margin: 0 20px;
 }
 
-
-
 /* header */
 .bg-color{
-    background-color: rgb(187, 139, 232);
+    background-color: rgb(190, 190, 235);
 }
 
 #header-row{
-    width: 80%;
+    padding-top: 80px;
+    width: 90%;
     margin: 0 auto;
-    /* debug */
-    border: 1px solid black;
 }
 
 h1{
@@ -60,46 +58,55 @@ h1{
 
 #header-col{
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: flex-start;
   padding-top: 40px;
-  /* debug */
-  border: 1px solid black;
+  margin-left: 40px;
 }
 
 .header-col-sx{
-    width: 25%;
-    /* debug */
-    border: 1px solid black;
-
+    width: 30%;
+    font-size: 20px;
 }
 
 .header-col-dx{
     width: 40%;
-    /* debug */
-    border: 1px solid black;
 }
 
 .header-col-dx img{
     width: 100%;
 }
 
-.header-col-sx p, button, span{
-    margin-bottom: 30px;
+.header-col-sx p {
+    margin-bottom: 30px;  
+}
+
+.header-col-sx span{
     display: block;
+    margin: 30px 0;
+}
+
+.fa-arrow-down{
+    margin-top: 100px;
 }
 
 .fa-arrow-down{
     font-size: 30px;
-    margin-top: 45px;
+}
+
+button{
+    background-color: #0061FE;
+    padding: 10px;
+    color: white;
 }
 
 /* main */
 /* first section */
 .main-row{
-    margin: 50px auto;
-    width: 65%;
-    border: 1px solid black;
+    margin: 100px auto 50px;
+    width: 70%;
+    /* debug */
+    /* border: 1px solid lightgray; */
 }
 
 input{
@@ -109,32 +116,37 @@ input{
 .main-col{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    /* debug */
-    border: 1px solid black;
-    height: 700px; 
+    align-items: stretch;
+    flex-grow: 1;
 }
 
 .main-col-content{
-    flex-grow: 1;
-    border: 1px solid black;
-    
+    border: 1px solid lightgrey;
+    min-width: 30%;
+}
+
+.price{
+    margin-bottom: 40px;
+}
+
+.col-cx{
+    margin: 0 40px;
 }
 
 .icons{
     display: flex;
     justify-content: center;
-    border: 1px solid grey;
+    border: 1px solid lightgray;
     padding: 5px;
     margin-bottom: 30px;
 }
 
-.fa-user{
+.icons .fa-user{
     margin-right: 5px;
 }
 
 .margin-col{
-    margin-left: 20px;
+    margin: 0 20px;
 }
 
 .margin-col h3{
@@ -145,11 +157,102 @@ input{
     margin: 20px 0;
 }
 
-.main-col-content li{
+.fa-check{
+    color: blue;
+}
+
+.features-icons{
+    display: flex;
+    margin: 15px 0;
+}
+
+.features-text{
+    margin-left: 10px;
+}
+
+.divider{
+    width: 50px;
+    border-top: 1px solid grey;
+    margin: 30px 0 0 ;
+}
+
+.buy{
+    margin-top: 30px;
+}
+
+.trial{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.trial button{
+    width: 100%;
+}
+
+/* sezione 2*/
+.container{
+    margin: 50px auto;
+    width: 70%;
+}
+
+.grey-border{
+    border: 1px solid lightgray;
+}
+
+.center{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0;
+    border: 1px solid lightgrey;
+}
+
+.col{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 20px;
+}
+
+.col .col-sx h2{
     margin-bottom: 15px;
 }
 
+.col .col-sx h3{
+    margin-bottom: 40px;
+}
 
+/* section 3 */
+.col-sec-3{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px;
+    height: 500px;
+    border: 1px solid black;
+}
 
+.col-img{
+    flex-basis: 50%%;
+}
 
+.col-img img{
+    width: 100%;
+}
+
+.col-text{
+    padding-top: 30px;
+    margin-left: 50px;
+}
+
+.col-text h2{
+    margin-bottom: 20px;
+}
+
+.col-text button{
+    margin-top: 50px;
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    
+}
 
