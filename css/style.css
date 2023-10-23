@@ -10,15 +10,13 @@ body{
 }
 
 /* nav bar */
-
-
 #nav-row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* debug */
-    height: 100px;
+    height: 80px;
     width: 100%;
+    /* debug */
     border: 1px solid black
 }
 
@@ -26,72 +24,132 @@ body{
     padding: 0 10px;
 }
 
+ul{
+    list-style: none;
+}
+
 .nav-col ul{
     display: flex;
     align-items: center;
-    list-style: none;
 }
 
 .nav-col a {
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
-/* jumbotron */
+
+
+/* header */
 .bg-color{
-    background-color: rgb(191, 155, 224);
+    background-color: rgb(187, 139, 232);
 }
 
-.jumbotron-row{
+#header-row{
     width: 80%;
     margin: 0 auto;
     /* debug */
     border: 1px solid black;
-    height: 350px;
-    
 }
-
-.content-col{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.jumbotron-col{
-    /* debug */
-    border: 1px solid black;
-    width: 300px;
-    height: 200px;
-  
-}
-
 
 h1{
     text-align: center;
-    margin-top: 50px;
+    padding-top: 40px;
+    font-size: 50px;
+}
+
+#header-col{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  /* debug */
+  border: 1px solid black;
+}
+
+.header-col-sx{
+    width: 25%;
+    /* debug */
+    border: 1px solid black;
+
+}
+
+.header-col-dx{
+    width: 40%;
+    /* debug */
+    border: 1px solid black;
+}
+
+.header-col-dx img{
+    width: 100%;
+}
+
+.header-col-sx p, button, span{
+    margin-bottom: 30px;
     display: block;
 }
 
+.fa-arrow-down{
+    font-size: 30px;
+    margin-top: 45px;
+}
 
+/* main */
+/* first section */
+.main-row{
+    margin: 50px auto;
+    width: 65%;
+    border: 1px solid black;
+}
 
-/* Main */
-.row{
-    width: 70%;
-    margin: 100px auto;
+input{
+    margin: 40px 0;  
+}
+
+.main-col{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     /* debug */
     border: 1px solid black;
-    height: 500px;
-   
-}
-.content-col{
-
+    height: 700px; 
 }
 
-.option-col{
-    /* debug */
-    width: calc(100% / 3);
-    height: 300px;
+.main-col-content{
+    flex-grow: 1;
     border: 1px solid black;
     
 }
+
+.icons{
+    display: flex;
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.fa-user{
+    margin-right: 5px;
+}
+
+.margin-col{
+    margin-left: 20px;
+}
+
+.margin-col h3{
+    margin-bottom: 15px;
+}
+
+.margin-col h4{
+    margin: 20px 0;
+}
+
+.main-col-content li{
+    margin-bottom: 15px;
+}
+
+
+
+
+
