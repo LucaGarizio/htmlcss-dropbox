@@ -253,8 +253,8 @@ button:hover{
     align-items: flex-start;
 }
 
-.row-display-cx p{
-    margin-bottom: 20px;
+.row-display-cx{
+    margin-bottom: 100px;
 }
 
 .icon{
@@ -270,21 +270,20 @@ button:hover{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    padding: 30px 40px 0 0;
 }
 
 .col-2-sx{
-    padding: 30px 0 0 20px;
+    padding: 30px 40px 20px;
 }
 
-.col-2-dx{
-    padding: 30px 20px 0 0;
-}
 
 .col-2 h4{
     margin: 20px 0 40px 0;
 }
 
 /* sezione 3 */
+
 
 .col-2-img{
     flex-basis: 50%;
@@ -302,17 +301,21 @@ button:hover{
     min-width: 300px;
 }
 
+
 .col-2-text p{
     margin: 20px 0 30px 0;
 }
 
 .col-2-text button{
     color: black;
-    background-color: transparent;
+
 }
 
 /* section 4 */
 
+.row-display-sb h3{
+    padding-top: 20px;
+}
 .col-3 img{
     width: 100%;
     min-width: 300px;
@@ -364,6 +367,7 @@ button:hover{
 /* large row 2 */
 .large-row-col{
     display: flex;
+    justify-content: space-around;
     width: 70%;
     margin: 0 auto;
 }
