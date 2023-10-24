@@ -50,43 +50,51 @@ ul{
 
 
 /* header */
+
+header{
+    width: calc(100vh -80px);
+}
+
+.center-header {
+    height: 200px;
+    border: 1px solid;
+}
 .bg-color{
     background-color: rgb(190, 190, 235);
 }
 
 #header-row{
-    padding-top: 80px;
-    width: 90%;
-    margin: 0 auto;
+    padding-top: 60px;
+    width: 100%;
+    /* margin: 0 auto; */
 }
 
 h1{
     text-align: center;
     padding-top: 100px;
     font-size: 50px;
-    min-width: 600px;
 }
 
 h2{
     font-size: 30px;
 }
 
-
 #header-col{
+    width: 100%;
     display: flex;
     justify-content:center;
     align-items: flex-start;
     padding-top: 40px;
-    margin-left: 40px;
 }
 
 .header-col-sx{
-    width: 50%;
+    padding-top: 100px;
+    width: 30%;
     font-size: 20px;
 }
 
 .header-col-dx{
-    width: 50%;
+    width: 60%;
     min-width: 600px;
 }
 
@@ -94,26 +102,27 @@ h2{
     width: 100%;
 }
 
-.header-col-sx p {
-    margin-bottom: 30px;  
+.header-col-sx button {
+    margin: 100px 0;    
 }
 
 .header-col-sx{
-    padding: 0 40px 0 70px;
     min-width: 600px;
 }
 
 .header-col-sx span{
     display: block;
-    margin: 30px 0;
+    margin: 40px 0;
+}
+
+.fa-arrow-down:hover{
+    font-size: 50px;
 }
 
 .fa-arrow-down{
-    margin-top: 100px;
-}
-
-.fa-arrow-down{
-    font-size: 30px;
+    font-size: 40px;
+    padding-top: 50px;
+    color: black;
 }
 
 button{
@@ -181,9 +190,8 @@ button:hover{
 
 /* type of subscription */
 .padding-left{
-    padding: 0 20px;
+    padding: 0 30px;
 }
-
 
 .type h3{
     margin: 40px 0 20px 0 ;
@@ -192,7 +200,7 @@ button:hover{
 
 .price{
     display: block;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 
@@ -414,6 +422,7 @@ button:hover{
 .question:hover + .answer{
     display: block;
 }
+
 
 
 /* footer */
