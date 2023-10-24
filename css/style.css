@@ -19,6 +19,7 @@ body{
     height: 80px;
     width: 100%;
     background-color: white;
+    
 }
 
 .nav-col{
@@ -65,16 +66,16 @@ h1{
 }
 
 .header-col-sx{
-    width: 30%;
+    width: 40%;
     font-size: 20px;
 }
 
 .header-col-dx{
-    width: 40%;
+    width: 50%;
 }
 
 .header-col-dx img{
-    width: 100%;
+    width: 700px;
 }
 
 .header-col-sx p {
@@ -105,8 +106,6 @@ button{
 .main-row{
     margin: 100px auto 50px;
     width: 70%;
-    /* debug */
-    /* border: 1px solid lightgray; */
 }
 
 input{
@@ -222,37 +221,25 @@ input{
 }
 
 /* section 3 */
-.col-sec-3{
+
+.row{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 100px;
-    height: 500px;
-    border: 1px solid black;
 }
 
-.col-img{
-    flex-basis: 50%%;
+.column{
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
-.col-img img{
-    width: 100%;
+.column-img img{
+    width: 580px;
 }
 
-.col-text{
-    padding-top: 30px;
-    margin-left: 50px;
+.column-text{
+    padding: 100px 60px;
 }
 
-.col-text h2{
-    margin-bottom: 20px;
+.column-text p{
+    margin: 20px 0 40px;
 }
-
-.col-text button{
-    margin-top: 50px;
-    background-color: transparent;
-    color: black;
-    font-size: 18px;
-    
-}
-
