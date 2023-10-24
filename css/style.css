@@ -67,6 +67,11 @@ h1{
     min-width: 600px;
 }
 
+h2{
+    font-size: 30px;
+}
+
+
 #header-col{
     display: flex;
     justify-content:center;
@@ -116,6 +121,11 @@ button{
     padding: 10px;
     color: white;
     font-size: 18px;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 /* main */
@@ -174,9 +184,6 @@ button{
     padding: 0 20px;
 }
 
-.top-col{
-    /* border: 1px solid black; */
-}
 
 .type h3{
     margin: 40px 0 20px 0 ;
@@ -192,7 +199,6 @@ button{
 /* container opzioni piano */
 .option-container{
     display: flex;
-    /* border: 1px solid black; */
 }
 
 .gap{
@@ -226,10 +232,6 @@ button{
     margin: 50px 0;
 }
 
-.bottom-col{
-    /* height: 300px;
-    border: 1px solid black; */
-}
 
 .bottom-col h3{
     margin-bottom: 30px;
@@ -241,7 +243,6 @@ button{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* border: 1px solid lightgray; */
 }
 
 .row-display-cx p{
@@ -253,10 +254,8 @@ button{
 }
 
 .col-2{
-    flex-basis: 50%;
-    /* debug */
-    /* border: 1px solid black; */
     min-width: 400px;
+    flex-basis: 50%;
 }
 
 .col-2-dx{
@@ -318,51 +317,108 @@ button{
 /* section 5 */
 .medium-row a{
     display: inline-block;
-    margin-top: 30px;
+    margin: 30px 0;
 }
-
-
-
 
 /* section 6 */
 .large-row{
-    height: 300px;
     border: 1px solid black;
-    width: 100%;
     display: flex;
-    margin-top: 150px ;
 
 }
 
 .container-col{
     width: calc(100% / 3);
-    border: 1px solid black;
+    height: calc(100vw / 3);
     display: flex;
-    flex-wrap: wrap;
 }
 
 .row-col-4{
    display: flex;
    width: 100%;
-   border: 1px solid black;
+   height: 100%;
+   flex-wrap: wrap;
 }
 
 .col-4{
+    width: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
     border: 1px solid black;
 }
 
 .col-4 img{
-    width: 85%;
+    width: 65%;
 }
+
+/* large row 2 */
+.large-row-col{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.bg-color{
+    background-color: rgb(190, 190, 235);
+}
+
+.large-col{
+    padding: 150px 0;
+}
+
+.large-col h2{
+    padding-right: 100px;
+}
+
+.large-col button{
+    background-color: rgb(201, 214, 214) ;
+    color: black;
+    width: 300px;
+}
+
+
+/* last row */
+.last-container{
+    margin: 0 auto;
+    width: 70%;
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+.last.row{
+    width:100%
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.last-row h2{
+    padding: 80px 0 40px 0;
+
+}
+
+.last-row h3{
+    padding: 30px 0;
+}
+
+.answer{
+    display: none;
+}
+
+.question:hover + .answer{
+    display: block;
+}
+
 
 /* footer */
 .footer-bg-color{
-    background-color: black;
-    
+    background-color: black; 
 }
 
 #display{
@@ -372,13 +428,11 @@ button{
 
 .footer-row{
     padding: 100px 100px 0;
-    /* border: 1px solid white; */
 }
 
 .footer-col{
     flex-grow: 1;
-    color: white;
-    /* border: 1px solid white;                             */
+    color: white;                       
 }
 
 .footer-col li{
@@ -405,6 +459,7 @@ button{
     align-items: center;
     justify-content: flex-start;
     color: grey;
+    padding-bottom: 50px;
 }
 
 .footer-icon span{
