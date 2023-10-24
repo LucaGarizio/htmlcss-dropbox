@@ -104,7 +104,7 @@ button{
 /* main */
 /* first section */
 .main-row{
-    margin: 100px auto 50px;
+    margin: 80px auto 50px;
     width: 70%;
 }
 
@@ -189,9 +189,13 @@ input{
 }
 
 /* sezione 2*/
-.container{
-    margin: 50px auto;
+.title-container{
+    margin: 60px auto 40px ;
     width: 70%;
+}
+
+.title-container h2{
+    font-size: 35px;
 }
 
 .grey-border{
@@ -221,25 +225,44 @@ input{
 }
 
 /* section 3 */
-
 .row{
     display: flex;
+    align-items: flex-start;
 }
 
-.column{
-    flex-basis: 50%;
+.column{ 
     flex-grow: 1;
     flex-shrink: 1;
 }
 
+.column-img{
+    flex-basis: 50%;
+}
+
 .column-img img{
-    width: 580px;
+    width: 700px;
 }
 
 .column-text{
     padding: 100px 60px;
+    flex-basis: 50%;
 }
 
 .column-text p{
     margin: 20px 0 40px;
+}
+
+
+/* section 4 */
+.column-content:nth-of-type(2){
+    padding: 0 50px;
+}
+
+
+.column-content img{
+    width: 100%;
+}
+
+.column-content p{
+    margin-top: 30px;
 }
