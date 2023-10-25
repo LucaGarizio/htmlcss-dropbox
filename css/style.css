@@ -71,7 +71,7 @@ header{
 
 h1{
     text-align: center;
-    padding-top: 100px;
+    padding: 100px 0 20px 0;
     font-size: 50px;
 }
 
@@ -94,12 +94,13 @@ h2{
 }
 
 .header-col-dx{
-    width: 60%;
+    width: 50%;
     min-width: 600px;
 }
 
 .header-col-dx img{
     width: 100%;
+    padding-top: 100px;
 }
 
 .header-col-sx button {
@@ -154,7 +155,7 @@ button:hover{
 
 .medium-row{
     width: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .input-margin{
@@ -219,6 +220,9 @@ button:hover{
     margin-bottom: 40px ;
 }
 
+.fa-check{
+    color: blue;
+}
 /* trial */
 .trial button{
     width: 100%;
@@ -335,13 +339,35 @@ button:hover{
 .large-row{
     border: 1px solid black;
     display: flex;
-
 }
 
+.large-row-gap{
+    margin-top: 150px;
+}
 .container-col{
     width: calc(100% / 3);
     height: calc(100vw / 3);
     display: flex;
+    
+}
+
+.bg-col-text{
+    background-color: #e3dfdf;
+}
+
+#container-col-text h2{
+    font-size: 60px;
+}
+
+.container-col-text-divider{
+    width: 100px;
+    border-top: 1px solid black;
+    margin: 50px 0;
+}
+
+#container-col-text{
+    font-size: 100%;
+    padding: 40px 40px;
 }
 
 .row-col-4{
@@ -357,12 +383,48 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 
 .col-4 img{
     width: 65%;
+    filter: invert(100%)
 }
+
+/* bg image color */
+#designit{
+    background-color: #adad26;
+}
+
+#florida{
+    background-color: #00bfff;
+}
+
+#arizona{
+    background-color: #6d0026;
+}  
+
+#topps{
+    background-color: #f2300d;
+}
+
+#bicycle{
+    background-color: #ff0000;
+}
+
+#corps{
+    background-color: #66ccff;
+}
+
+#planet{
+    background-color: #0000ff;
+}
+
+#channel{
+    background-color: #91f23d;
+}
+
+
+
 
 /* large row 2 */
 .large-row-col{
