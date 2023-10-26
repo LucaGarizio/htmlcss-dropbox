@@ -461,6 +461,12 @@ ul{
     right: 0;
 }
 
+.fa-chevron-up{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 /* footer */
 .footer-bg-color{
     background-color: black; 
@@ -493,5 +499,35 @@ ul{
     padding-bottom: 60px;
 }
 
+
+
+/* bonus */
+
+.answer {
+    display: none;
+  }
+  
+
+  .question:hover + .answer {
+    display: block;
+    padding: 10px 50px 10px 0 ;
+  }
+
+
+  .down{
+    display: block;
+  }
+
+  .up {
+    display: none;
+  }
+  
+  .question:hover .down{
+    display: none;
+  }
+
+  .question:hover .up{
+    display: block;
+  }
 
 
